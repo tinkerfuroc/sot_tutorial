@@ -12,7 +12,7 @@ def show_img_from_array(img):
     plt.show()
 
 # 获取视频第一帧
-input_path = './data/people.mp4'
+input_path = './data/bee.mp4'
 cap = cv2.VideoCapture(input_path)
 if cap.isOpened():
     success, frame = cap.read()

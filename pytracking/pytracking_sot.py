@@ -24,9 +24,9 @@ def get_parameters(self):
         return params
 
 # 设置参数
-videofilepath = r'data/bee.mp4'  	# 视频存放地址
-video_save_path = r'results/bee1.mp4'
-results_dir = r'results'  	# 视频存放地址
+videofilepath = r'../data/bee.mp4'  	# 视频存放地址
+video_save_path = r'../results/bee1.mp4'
+results_dir = r'../results'  	# 视频存放地址
 
 
 # bbox = cv2.selectROI('frame', frame, fromCenter=False, showCrosshair=True)	
