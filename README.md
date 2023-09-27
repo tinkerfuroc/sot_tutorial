@@ -45,6 +45,7 @@ cuda
 conda create --name opencv python=3.7
 conda activate opencv
 pip install opencv-python
+pip install opencv-contrib-python
 python opencv_sot.py    // 按空格开始播放，再按空格会结束，并把视频保存到results文件夹
 python opencv_sot_camera.py // 按空格开始播放，再按Q会结束，并把视频保存到results文件夹
 ```
