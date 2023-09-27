@@ -7,11 +7,11 @@ Ubuntu
 cuda
 
 # 文件结构（斜体表示 .gitignore 的文件（夹），需要自行添加）
-|——*data*: 推荐的输入文件夹命名
+|——*data: 推荐的输入文件夹命名*
 
 |　　|——*bee.mp4*: 推荐的示例视频，下载：`wget https://zihao-openmmlab.obs.cn-east-3.myhuaweicloud.com/20220418-mmtracking/data/bee.mp4 -O data/bee.mp4`
 
-|——*results*: 推荐的输出文件夹命名
+|——*results: 推荐的输出文件夹命名*
 
 |——ltr: pytracking所需文件夹
 
@@ -21,21 +21,17 @@ cuda
 
 |　　|——*networks*
 
-|　　　　|——*dimp50.pth*: pytracking的模型，下载：`gdown https://drive.google.com/uc\?id\=1qgachgqks2UGjKx-GdO1qylBDdB1f9KN -O pytracking/networks/dimp50.pth`
+|　　　　|——*dimp50.pth: pytracking的模型，下载：`gdown https://drive.google.com/uc\?id\=1qgachgqks2UGjKx-GdO1qylBDdB1f9KN -O pytracking/networks/dimp50.pth`*
 
-|　　　　|——*dimp18.pth*: pytracking的模型，下载：`gdown https://drive.google.com/uc\?id\=1MAjrRJDCbL0DSjUKFyDkUuYS1-cYBNjk -O pytracking/networks/dimp18.pth`
+|　　　　|——*dimp18.pth: pytracking的模型，下载：`gdown https://drive.google.com/uc\?id\=1MAjrRJDCbL0DSjUKFyDkUuYS1-cYBNjk -O pytracking/networks/dimp18.pth`*
 
-|　　　　|——*atom_default.pth*: pytracking的模型，下载：`gdown https://drive.google.com/uc\?id\=1VNyr-Ds0khjM0zaq6lU-xfY74-iWxBvU -O pytracking/networks/atom_default.pth`
+|　　　　|——*atom_default.pth: pytracking的模型，下载：`gdown https://drive.google.com/uc\?id\=1VNyr-Ds0khjM0zaq6lU-xfY74-iWxBvU -O pytracking/networks/atom_default.pth`*
 
-|　　　　|——*resnet18_vggmconv1.pth*: pytracking的模型，下载：`gdown https://drive.google.com/uc\?id\=1aWC4waLv_te-BULoy0k-n_zS-ONms21S -O pytracking/networks/resnet18_vggmconv1.pth`
+|　　　　|——*resnet18_vggmconv1.pth: pytracking的模型，下载：`gdown https://drive.google.com/uc\?id\=1aWC4waLv_te-BULoy0k-n_zS-ONms21S -O pytracking/networks/resnet18_vggmconv1.pth`*
 
 |　　|——……
 
 |——getROI.py: 运行后手动框选ROI，按空格后即可打印出ROI的坐标(x, y, w, h)
-
-|——*goturn.caffemodel*: GOTURN的模型文件，下载地址：https://github.com/spmallick/goturn-files
-
-|——*goturn.prototxt*: GOTURN的模型文件，下载地址：https://github.com/spmallick/goturn-files
 
 |——mmtracking_sot.py: 运行mmtracking的示例代码，实现视频跟踪，可在第 10-14 行选择想要的算法（siamese_rpn或stark_st2），可在第19行更改初始框选坐标，输入输出路径可自定义
 
@@ -49,8 +45,8 @@ cuda
 conda create --name opencv python=3.7
 conda activate opencv
 pip install opencv-python
-python opencv_sot.py
-python opencv_sot_camera.py
+python opencv_sot.py    // 按空格开始播放，再按空格会结束，并把视频保存到results文件夹
+python opencv_sot_camera.py // 按空格开始播放，再按Q会结束，并把视频保存到results文件夹
 ```
 # mmtracking
 
@@ -69,7 +65,7 @@ pip install mmtrack==0.14.0
 
 pip install seaborn ipywidgets tqdm imageio-ffmpeg ninja -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-python mmtracking_sot.py
+python mmtracking_sot.py    // 按空格开始播放，再按空格会结束，并把视频保存到results文件夹
 ```
 
 # pytracking
@@ -95,5 +91,5 @@ gdown https://drive.google.com/uc\?id\=1VNyr-Ds0khjM0zaq6lU-xfY74-iWxBvU -O pytr
 # Download the default network for ECO
 gdown https://drive.google.com/uc\?id\=1aWC4waLv_te-BULoy0k-n_zS-ONms21S -O pytracking/networks/resnet18_vggmconv1.pth
 
-python pytracking/pytracking_sot.py
+python pytracking/pytracking_sot.py     // 按空格开始播放，再按空格会结束，并把视频保存到results文件夹
 ```
