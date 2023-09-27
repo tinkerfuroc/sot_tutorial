@@ -21,7 +21,7 @@ out = cv2.VideoWriter(video_save_path, cv2.VideoWriter_fourcc('D', 'I', 'V', 'X'
 bbox = cv2.selectROI('frame', frame, fromCenter=False, showCrosshair=True)	
 # init_bbox = (132, 59, 57, 61)
 # 人工标注感兴趣目标
-tracker = cv2.TrackerGOTURN_create()		# 使用csrt算法
+tracker = cv2.legacy.TrackerCSRT_create()		# 使用csrt算法
 tracker.init(frame, bbox)						# 初始化tracker
 
 while cap.isOpened():
