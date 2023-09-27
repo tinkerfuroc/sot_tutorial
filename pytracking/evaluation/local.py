@@ -11,13 +11,13 @@ def local_env_settings():
     settings.got_reports_path = ''
     settings.lasot_extension_subset_path = ''
     settings.lasot_path = ''
-    settings.network_path = '/Users/ywsffj/Desktop/活动/大学/组织/未来机器人/pytracking/pytracking/networks/'    # Where tracking networks are stored.
+    settings.network_path = '/home/youwang/sot_tutorial/pytracking/networks/'    # Where tracking networks are stored.
     settings.nfs_path = ''
     settings.otb_path = ''
     settings.oxuva_path = ''
-    settings.result_plot_path = '/Users/ywsffj/Desktop/活动/大学/组织/未来机器人/pytracking/pytracking/result_plots/'
-    settings.results_path = '/Users/ywsffj/Desktop/活动/大学/组织/未来机器人/pytracking/pytracking/tracking_results/'    # Where to store tracking results
-    settings.segmentation_path = '/Users/ywsffj/Desktop/活动/大学/组织/未来机器人/pytracking/pytracking/segmentation_results/'
+    settings.result_plot_path = '/home/youwang/sot_tutorial/pytracking/result_plots/'
+    settings.results_path = '/home/youwang/sot_tutorial/pytracking/tracking_results/'    # Where to store tracking results
+    settings.segmentation_path = '/home/youwang/sot_tutorial/pytracking/segmentation_results/'
     settings.tn_packed_results_path = ''
     settings.tpl_path = ''
     settings.trackingnet_path = ''

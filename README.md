@@ -13,6 +13,8 @@ cuda
 
 |——*results: 推荐的输出文件夹命名*
 
+|——config: mmtracking的配置文件
+
 |——ltr: pytracking所需文件夹
 
 |——pytracking
